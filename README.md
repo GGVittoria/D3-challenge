@@ -1,7 +1,7 @@
 # D3-challenge
 D3 Homework - Data Journalism and D3
 
-Correlations Discovered Between Health Risks and Age, Income
+Correlations Discovered Between Health Risks and Income
 
 Using this plot, you are able to compare state data for poverty and household median income against the % of the population lacking healthcare and the % suffering with obesity.
 
