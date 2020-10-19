@@ -1,12 +1,5 @@
-//Homework 16 - D3 Plots
-// Jeff Brown
-//This home work focuses on using D3 to make a custom graph with selectable axis values 
-//and transitional features when changing selections.
-//It also makes use of tool tips to show values of data points.
-
-//The code plots the % lacking healthcare on the Y axis and the % in poverty and the median income on the x axis.
-//The user can select between %in poverty and median income on the x axis and the plot will update and use transitions.
-//User can also move the mouse over a point and see the data (using tool tips)
+//Why make a static graphic when D3 lets you interact with your data? 
+//Incorporate d3-tip
 
 //Setting display window
 var svgWidth = 960;
@@ -43,8 +36,7 @@ cirColor = ["lightblue", "yellow"]
 var axisYNum = 0;
 cirLine = ["yellow", "lightblue"]
 
-//**********************************************************************/
-//****************Defining Functions ***********************************/
+//FUNCTIONS
 
 //**********************************************************************/
 // function used for updating x-scale var upon click on axis label
@@ -248,7 +240,7 @@ var incomeLabel = labelsXGroup.append("text")
   .attr("value", "income")//value for event listener
   .classed("active", false)
   .classed("inactive", true)
-  .text("House Hold Median Income ($)");
+  .text("Household Median Income ($)");
 
 
 
@@ -368,6 +360,3 @@ labelsYGroup.selectAll("text")
 
 //catching and logging errors 
 }).catch(function(error){console.log(error)}); //error handling
-
-
-
